@@ -1,0 +1,41 @@
+{
+  "name": "ijazah-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy_SSGA.ts --network amoy",
+    "verify-contract": "hardhat verify --network amoy 0x79b0a91E223b4FBF1C38FA9A60C1e56441E850B3 \"0x3E06A17E3aaAE81553Cd341c2879FE8a09e4398c\" \"0xc462c8a54cB405F4C607Be2A526C80Ec31533bAf\" \"0x2bF0AEF72745c30E96E06f2D0D91D0F12f1a0F2D\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ethersproject/providers": "^5.8.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.1.2",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomicfoundation/hardhat-verify": "^3.0.16",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^25.6.0",
+    "chai": "^4.5.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.19.1",
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.17",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
